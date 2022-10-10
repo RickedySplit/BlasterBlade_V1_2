@@ -39,8 +39,8 @@ public class Target : MonoBehaviour
         if (FloatingTextPrefab != null)
         {
             lastDamageAmountTaken = damage;
-            Instantiate(FloatingTextPrefab, transform.position, Quaternion.identity, transform);
-            FloatingTextPrefab.GetComponent<TextMeshPro>().SetText(lastDamageAmountTaken.ToString());
+            GameObject newParticle = Instantiate(FloatingTextPrefab, transform.position, Quaternion.identity, transform);
+            newParticle.GetComponent<TextMeshPro>().SetText(lastDamageAmountTaken.ToString());
             //ShowFloatingText();
         }
     }
