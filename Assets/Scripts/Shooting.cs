@@ -9,7 +9,8 @@ public class Shooting : MonoBehaviour
     public GameObject player;
     public Sprite playerThisGunSprite; //The Sprite that shows the player holding the weapon (E.G. if this sprite is for an AK, sprite will show player holding an AK)
 
-    public Transform firePoint; //Place the bullets come from
+    public Transform firePoint; //Original Place the bullets come from
+    public Transform newFirePoint; //New Place the bullets come from
     public GameObject bulletPrefab; //Prefab of bullet (Might want to add variables to THIS script so damage can be changed through this script? Would allow every bullet to be generic and become special through the script itself.)
 
     //Sounds (Usually Comes from firePoint)
@@ -18,8 +19,8 @@ public class Shooting : MonoBehaviour
     public AudioClip gunFiringSound;
     public AudioClip gunReloadingSound;
 
-    public float maxSpreadAngle = 15.0f;
-    public float minSpreadAngle = -15.0f;
+    public float maxSpreadAngle = 15f;
+    public float minSpreadAngle = -15f;
 
     public float setTimeBetweenAttacks = 0.1f; //Time Until player can shoot again
     //How Much time "currentTimeUntilAbleToShoot" should go up to"
@@ -162,24 +163,30 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
-        Quaternion currentSpread = Quaternion.Euler(Random.Range(0.0f, 0f), Random.Range(0.0f, 0f), Random.Range(minSpreadAngle, maxSpreadAngle));
-        Debug.Log("Spread Num is " + currentSpread.ToString());
-        //float currentSpreadAngle = Random.Range(minSpreadAngle, maxSpreadAngle);
+        //Quaternion currentSpread = Quaternion.Euler(0f, 0f, Random.Range(minSpreadAngle, maxSpreadAngle));
+        float currentSpreadAngle = Random.Range(minSpreadAngle, maxSpreadAngle);
+        Debug.Log("Current Spread = " + currentSpreadAngle.ToString());
 
         currentMagAmmo -= ammoCostPerShot;
         currentTimeUntilAbleToShoot = setTimeBetweenAttacks;
 
         muzzleSource.GetComponent<AudioSource>().PlayOneShot(gunFiringSound, 1f);
 
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation * currentSpread);
+        Vector3 rot = newFirePoint.rotation.eulerAngles;
+        rot = new Vector3(rot.x, rot.y, rot.z + currentSpreadAngle);
+        newFirePoint.rotation = Quaternion.Euler(rot);
+
+        GameObject bullet = Instantiate(bulletPrefab, newFirePoint.position, newFirePoint.rotation);
         //Bullet instantiated, named "Bullet"
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         //Bullet accesses Rigidbody2D component, component named "rb"
-        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+
+        rb.AddForce(newFirePoint.up * bulletForce, ForceMode2D.Impulse);
         //rb used to access "Addforce function
 
-        //Quaternion newRot = bullet.transform.rotation;
-        //newRot = Quaternion.Euler(bullet.transform.eulerAngles.x, bullet.transform.eulerAngles.y, bullet.transform.eulerAngles.z += currentSpread);
+        newFirePoint.rotation = firePoint.rotation;
+        newFirePoint.position = firePoint.position;
+
         muzzleFlash.Play();
 
     }
