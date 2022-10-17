@@ -1,7 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using static Rigidbody2DExtensions;
+using static Rigidbody2DExtensions; //Yeah Yeah, this is stolen from a reddit post, shut up
+
+public static class Rigidbody2DExtensions
+{
+    public static void AddExplosionForce2D(this Rigidbody2D rb, Vector3 explosionOrigin, float explosionForce, float explosionRadius)
+    {
+        Vector3 direction = rb.transform.position - explosionOrigin;
+        float forceFalloff = 1 - (direction.magnitude / explosionRadius);
+        rb.AddForce(direction.normalized * (forceFalloff <= 0 ? 0 : explosionForce) * forceFalloff);
+    }
+}
+
 
 public class Grenade : MonoBehaviour
 {
@@ -11,8 +22,9 @@ public class Grenade : MonoBehaviour
     public GameObject explosionEffect;
     public float blastRadius = 5;
     public float explosiveForce = 700;
+    public float damage = 5f;
 
-    // Start is called before the first frame update
+    // Start is called before the first frame update     
 
     void Start()
     {
@@ -53,6 +65,17 @@ public class Grenade : MonoBehaviour
             Rigidbody2D rb = nearbyObject.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
+                if (nearbyObject.CompareTag("Enemy"))
+                {
+                    nearbyObject.GetComponent<Target>().TakeDamage(damage);
+                    //Instantiate(enemyHitEffect, transform.position, Quaternion.identity);
+                }
+                else if (nearbyObject.CompareTag("PracticeEnemy"))
+                {
+                    nearbyObject.GetComponent<Target>().TakeDamage(damage);
+                    //Instantiate(crateHitEffect, transform.position, Quaternion.identity);
+                }
+
                 rb.AddExplosionForce2D(transform.position, explosiveForce, blastRadius);
             }
         }
