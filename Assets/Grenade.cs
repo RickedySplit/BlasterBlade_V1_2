@@ -23,6 +23,7 @@ public class Grenade : MonoBehaviour
     public float blastRadius = 5;
     public float explosiveForce = 700;
     public float damage = 5f;
+    public bool explodeOnImpact;
 
     // Start is called before the first frame update     
 
@@ -34,12 +35,23 @@ public class Grenade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        countdown -= Time.deltaTime;
+        if (explodeOnImpact == false)
         {
-            if (countdown <= 0f && !hasExploded)
+            countdown -= Time.deltaTime;
             {
-                Explode();
+                if (countdown <= 0f && !hasExploded)
+                {
+                    Explode();
+                }
             }
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (explodeOnImpact == true)
+        {
+            Explode();
         }
     }
 
