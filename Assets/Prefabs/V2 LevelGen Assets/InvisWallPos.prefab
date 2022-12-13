@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7098215918201449594}
   - component: {fileID: 7098215918201449597}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: InvisWallLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7098215918319560683}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: InvisWallPos
   m_TagString: WallTag
   m_Icon: {fileID: 0}
