@@ -8,6 +8,11 @@ public class MapResetScript : MonoBehaviour
     public GameObject mapPrefab;
     public GameObject currentMap;
 
+    //Note to Self: New System suggested by Pete - Restart Scene
+    //This has the advantage of being more simple, however it also has to reset everything in the scene
+    //Look up unity documentation on scene management
+
+
     // Start is called before the first frame update
     void Start()
     {
