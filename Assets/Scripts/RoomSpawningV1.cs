@@ -12,7 +12,7 @@ public class RoomSpawningV1 : MonoBehaviour
     {
         index = Random.Range (0, levels.Length);
         chosenLevel = levels[index];
-        Instantiate(chosenLevel, transform.position, transform.rotation);
+        Instantiate(chosenLevel, transform.position, transform.rotation, transform.parent);
     }
 
     // Update is called once per frame
