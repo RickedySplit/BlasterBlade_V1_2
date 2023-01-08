@@ -49,6 +49,11 @@ public class Shooting : MonoBehaviour
 
     public float newMoveSpeed = 6.5f;
 
+    public int bulletsPerShot = 1;
+    public int currentBulletsPerShot = 1;
+
+    public float currentSpreadAngle = 0;
+
 
     void Start()
     {
@@ -163,29 +168,34 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
-        //Quaternion currentSpread = Quaternion.Euler(0f, 0f, Random.Range(minSpreadAngle, maxSpreadAngle));
-        float currentSpreadAngle = Random.Range(minSpreadAngle, maxSpreadAngle);
-        Debug.Log("Current Spread = " + currentSpreadAngle.ToString());
+        currentBulletsPerShot = bulletsPerShot;
+
+        for (int i = 0; i < currentBulletsPerShot; i++)
+        {
+            //Quaternion currentSpread = Quaternion.Euler(0f, 0f, Random.Range(minSpreadAngle, maxSpreadAngle));
+            float currentSpreadAngle = Random.Range(minSpreadAngle, maxSpreadAngle);
+            Debug.Log("Current Spread = " + currentSpreadAngle.ToString());
+
+            Vector3 rot = newFirePoint.rotation.eulerAngles;
+            rot = new Vector3(rot.x, rot.y, rot.z + currentSpreadAngle);
+            newFirePoint.rotation = Quaternion.Euler(rot);
+
+            GameObject bullet = Instantiate(bulletPrefab, newFirePoint.position, newFirePoint.rotation);
+            //Bullet instantiated, named "Bullet"
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            //Bullet accesses Rigidbody2D component, component named "rb"
+
+            rb.AddForce(newFirePoint.up * bulletForce, ForceMode2D.Impulse);
+            //rb used to access "Addforce function
+
+            newFirePoint.rotation = firePoint.rotation;
+            newFirePoint.position = firePoint.position;
+        }
 
         currentMagAmmo -= ammoCostPerShot;
         currentTimeUntilAbleToShoot = setTimeBetweenAttacks;
 
         muzzleSource.GetComponent<AudioSource>().PlayOneShot(gunFiringSound, 1f);
-
-        Vector3 rot = newFirePoint.rotation.eulerAngles;
-        rot = new Vector3(rot.x, rot.y, rot.z + currentSpreadAngle);
-        newFirePoint.rotation = Quaternion.Euler(rot);
-
-        GameObject bullet = Instantiate(bulletPrefab, newFirePoint.position, newFirePoint.rotation);
-        //Bullet instantiated, named "Bullet"
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        //Bullet accesses Rigidbody2D component, component named "rb"
-
-        rb.AddForce(newFirePoint.up * bulletForce, ForceMode2D.Impulse);
-        //rb used to access "Addforce function
-
-        newFirePoint.rotation = firePoint.rotation;
-        newFirePoint.position = firePoint.position;
 
         muzzleFlash.Play();
 

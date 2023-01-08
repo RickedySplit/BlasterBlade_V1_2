@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -4698525815965805837}
   - component: {fileID: 5318430109430547787}
   m_Layer: 6
-  m_Name: Pistol_GunBulletTest_V1
+  m_Name: Shotgun_BulletTest_V1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1794665798980382412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 1}
   m_Children:
   - {fileID: 1861218301026617655}
   m_Father: {fileID: 0}
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 9
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.6132076, g: 0.34528276, b: 0.24586153, a: 1}
+  m_Color: {r: 0, g: 0.6698113, b: 0.2062486, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
   hitEffect: {fileID: 8880237279694976563, guid: c09fafe15f46a46498ecd448a0b984b1, type: 3}
   enemyHitEffect: {fileID: 8880237279694976563, guid: 67e7e03a20a62484f98423534fef02a7, type: 3}
   crateHitEffect: {fileID: 8880237279694976563, guid: 59d957df91e7ca649bc17fa0383c6f27, type: 3}
-  damage: 7
+  damage: 2.5
 --- !u!114 &5318430109430547787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,7 +277,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.091479495
+        value: 0.086545944
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -298,8 +298,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5882353, g: 0.33333334, b: 0.23529413, a: 0.9411765}
-      key1: {r: 0.5882353, g: 0.33333334, b: 0.23529413, a: 0}
+      key0: {r: 0, g: 0.6431373, b: 0.19607845, a: 0.627451}
+      key1: {r: 0, g: 0.6431373, b: 0.19607845, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 1}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}

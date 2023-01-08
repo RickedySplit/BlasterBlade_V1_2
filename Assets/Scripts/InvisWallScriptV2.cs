@@ -10,7 +10,7 @@ public class InvisWallScriptV2 : MonoBehaviour
     public GameObject wall;
     public bool isDoor = false;
 
-    public float stuffSpawnDelay = 2.5f;
+    public float stuffSpawnDelay = 1.5f;
     public float countdown;
     public bool hasSpawned = false;
 

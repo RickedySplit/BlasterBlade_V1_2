@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class DoorSpawningV2 : MonoBehaviour
 {
-    void OnCollisionEnter2D(Collision2D other) 
+    void OnTriggerEnter2D(Collider2D other) 
     {
         GameObject hitObject = other.gameObject;
         if (hitObject.CompareTag("WallTag"))
         {
+            Debug.Log("Hit Wall");
             hitObject.GetComponent<InvisWallScriptV2>().TurnToDoor();
         }
     }

@@ -66,6 +66,11 @@ public class WeaponWallet : MonoBehaviour
             selectedWeapon = 5;
         }
 
+        if ((Input.GetKeyDown(KeyCode.Alpha7) && transform.childCount >= 7) && (isReloading == false))
+        {
+            selectedWeapon = 6;
+        }
+
 
         if (previousSelectedWeapon != selectedWeapon)
         {
