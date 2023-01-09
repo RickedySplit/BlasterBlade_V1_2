@@ -13,10 +13,18 @@ public class Target : MonoBehaviour
 
     public GameObject FloatingTextPrefab;
 
+    public bool isObjectiveRequirement = false;
+    public GameObject LogicObj;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        LogicObj = GameObject.FindGameObjectWithTag("ScoreLogicObjTag");
+
+        if (isObjectiveRequirement == true)
+        {
+            LogicObj.GetComponent<ScoreCounter_V1>().AddScore();
+        }
     }
 
     // Update is called once per frame
@@ -27,6 +35,11 @@ public class Target : MonoBehaviour
 
         if (currentHealth <= 0f)
         {
+            if(isObjectiveRequirement == true)
+            {
+                LogicObj.GetComponent<ScoreCounter_V1>().RemoveScore();
+            }
+
             GameObject.Destroy(this.gameObject);
         }
     }

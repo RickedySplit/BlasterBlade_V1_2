@@ -8,6 +8,10 @@ TagManager:
   - PracticeEnemy
   - RoomCenterTag
   - WallTag
+  - WeaponHolsterTag
+  - AmmoHudTag
+  - ScoreLogicObjTag
+  - ScoreLogicHUDTag
   layers:
   - Default
   - TransparentFX

@@ -589,3 +589,5 @@ MonoBehaviour:
   healthSlider: {fileID: 3879827612308435210}
   lastDamageAmountTaken: 0
   FloatingTextPrefab: {fileID: 4578028000358213224, guid: 1dd6ee7408111af4395371efedbd5355, type: 3}
+  isObjectiveRequirement: 0
+  LogicObj: {fileID: 0}

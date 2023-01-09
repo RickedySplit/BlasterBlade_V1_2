@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MapResetScript : MonoBehaviour
 {
 
-    public GameObject mapPrefab;
-    public GameObject currentMap;
+    //public GameObject mapPrefab;
+    //public GameObject currentMap;
 
     //Note to Self: New System suggested by Pete - Restart Scene
     //This has the advantage of being more simple, however it also has to reset everything in the scene
@@ -18,7 +19,7 @@ public class MapResetScript : MonoBehaviour
     {
         //SpawnMap();
         //GameObject currentMap;
-        GameObject currentMap = Instantiate(mapPrefab, transform.position, transform.rotation);
+        //GameObject currentMap = Instantiate(mapPrefab, transform.position, transform.rotation);
         //GameObject currentMap = (GameObject)Instantiate(mapPrefab, transform.position, transform.rotation);
     }
 
@@ -28,8 +29,11 @@ public class MapResetScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
             //GameObject currentMap;
-            GameObject currentMap = Instantiate(mapPrefab, transform.position, transform.rotation);
-            Destroy(currentMap);
+            //GameObject currentMap = Instantiate(mapPrefab, transform.position, transform.rotation);
+            //Destroy(currentMap);
+
+            //This restarts the current scene
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
 
             //currentMap.GetComponent<selfDelete>().selfDeleto();

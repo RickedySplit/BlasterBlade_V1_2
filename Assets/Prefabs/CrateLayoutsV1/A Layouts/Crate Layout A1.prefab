@@ -105,7 +105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782074, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Name
-      value: Crate (1)
+      value: CrateSpawnPos
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Mesh
@@ -113,7 +113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_InstanceId
-      value: -80282
+      value: -814156
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
@@ -183,7 +183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782074, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Name
-      value: Crate (6)
+      value: CrateSpawnPos
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Mesh
@@ -191,7 +191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_InstanceId
-      value: -82552
+      value: -814208
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
@@ -261,7 +261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782074, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Name
-      value: Crate (4)
+      value: CrateSpawnPos
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Mesh
@@ -269,7 +269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_InstanceId
-      value: -80984
+      value: -814260
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
@@ -339,7 +339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782074, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Name
-      value: Crate (14)
+      value: CrateSpawnPos
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Mesh
@@ -347,7 +347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_InstanceId
-      value: -84306
+      value: -814312
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
@@ -417,7 +417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782074, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Name
-      value: Crate (9)
+      value: CrateSpawnPos
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Mesh
@@ -425,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_InstanceId
-      value: -83330
+      value: -814364
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
@@ -495,7 +495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782074, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Name
-      value: Crate (12)
+      value: CrateSpawnPos
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Mesh
@@ -503,7 +503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_InstanceId
-      value: -83942
+      value: -814416
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
@@ -573,7 +573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782074, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Name
-      value: Crate (2)
+      value: CrateSpawnPos
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Mesh
@@ -581,7 +581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_InstanceId
-      value: -80470
+      value: -814468
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
@@ -651,7 +651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782074, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Name
-      value: Crate (11)
+      value: CrateSpawnPos
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Mesh
@@ -659,7 +659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_InstanceId
-      value: -83726
+      value: -814520
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
@@ -729,7 +729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782074, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Name
-      value: Crate (10)
+      value: CrateSpawnPos
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Mesh
@@ -737,7 +737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_InstanceId
-      value: -83584
+      value: -814572
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
@@ -807,7 +807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782074, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Name
-      value: Crate (7)
+      value: CrateSpawnPos
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Mesh
@@ -815,7 +815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_InstanceId
-      value: -82880
+      value: -814624
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
@@ -885,7 +885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782074, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Name
-      value: Crate (3)
+      value: CrateSpawnPos
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Mesh
@@ -893,7 +893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_InstanceId
-      value: -80820
+      value: -814676
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
@@ -963,7 +963,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782074, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Name
-      value: Crate (13)
+      value: CrateSpawnPos
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Mesh
@@ -971,7 +971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_InstanceId
-      value: -84100
+      value: -814728
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
@@ -1041,7 +1041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782074, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Name
-      value: Crate (5)
+      value: CrateSpawnPos
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Mesh
@@ -1049,7 +1049,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_InstanceId
-      value: -82144
+      value: -814780
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
@@ -1119,7 +1119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782074, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Name
-      value: Crate (8)
+      value: CrateSpawnPos
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_Mesh
@@ -1127,7 +1127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4497349242521782079, guid: 28429c14a32485146b47ab57f8987c11, type: 3}
       propertyPath: m_InstanceId
-      value: -83042
+      value: -814832
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28429c14a32485146b47ab57f8987c11, type: 3}

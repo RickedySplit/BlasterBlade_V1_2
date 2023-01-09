@@ -57,6 +57,24 @@ public class Shooting : MonoBehaviour
 
     void Start()
     {
+        //Note, a Console error will be spat out upon equipping, this is because initially the PLAYER variable isn't assigned, but it's still trying to access it
+        //however this finds the PLAYER object and assigns it to the PLAYER Variable, stopping the error
+        //This happens because initially all weapons are disabled, and get enabled upon equipping them
+        if (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
+
+        if (WeaponWallet == null)
+        {
+            WeaponWallet = GameObject.FindGameObjectWithTag("WeaponHolsterTag");
+        }
+
+        if (ammunitionDisplay == null)
+        {
+            ammunitionDisplay = GameObject.FindGameObjectWithTag("AmmoHudTag").GetComponent<TextMeshProUGUI>();
+        }
+
         player.GetComponent<PlayerMovement>().moveSpeed = newMoveSpeed; //Sets the player's movement speed while weapon is equipped (e.g. so while holding Minigun, player is slow)
         player.GetComponent<SpriteRenderer>().sprite = playerThisGunSprite; //Sets the player's sprite to the one of them holding the gun.
     }
