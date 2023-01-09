@@ -74,7 +74,7 @@ MonoBehaviour:
   IsLightOn: 1
   WeaponWallet: {fileID: 0}
   newMoveSpeed: 6
-  bulletsPerShot: 5
+  bulletsPerShot: 3
   currentBulletsPerShot: 1
   currentSpreadAngle: 0
 --- !u!114 &2414394324393859249

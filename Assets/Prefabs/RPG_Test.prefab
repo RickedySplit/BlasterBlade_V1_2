@@ -123,7 +123,7 @@ MonoBehaviour:
   explosionEffect: {fileID: 8880237279694976563, guid: dd5f5deaf9ead14409102d5b8c902286, type: 3}
   blastRadius: 5
   explosiveForce: 700
-  damage: 7
+  damage: 30
   explodeOnImpact: 1
 --- !u!61 &6843390279523797162
 BoxCollider2D:

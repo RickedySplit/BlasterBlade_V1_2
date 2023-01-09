@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RandomLevelGenTest_V1.unity
     guid: 8bcad01c851b90d4b8c881678226b081
+  - enabled: 1
+    path: Assets/Scenes/GameWonScene.unity
+    guid: 26176369c4738aa4b94a6d9b8cfc3d65
   m_configObjects: {}

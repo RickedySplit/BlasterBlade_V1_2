@@ -564,8 +564,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc8977abb28d1214480918a59becf977, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 35
-  currentHealth: 35
+  maxHealth: 30
+  currentHealth: 30
   healthSlider: {fileID: 3879827612308435210}
   lastDamageAmountTaken: 0
   FloatingTextPrefab: {fileID: 4578028000358213224, guid: 1dd6ee7408111af4395371efedbd5355, type: 3}
@@ -584,11 +584,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  speed: 2
+  speed: 3
   PlayerMask:
     serializedVersion: 2
     m_Bits: 8
-  sightRange: 1
+  sightRange: 12
   playerInSightRange: 0
 --- !u!50 &-6055583489616165509
 Rigidbody2D:

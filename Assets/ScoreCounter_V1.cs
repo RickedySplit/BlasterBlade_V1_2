@@ -39,6 +39,7 @@ public class ScoreCounter_V1 : MonoBehaviour
 
     public void PlayerHasWon()
     {
+        Debug.Log("You won!");
         SceneManager.LoadScene("GameWonScene");
     }
 
